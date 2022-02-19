@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    script: './bin/www',
+    script: './application/bin/www',
   }],
   deploy : {
     production : {
