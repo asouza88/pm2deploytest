@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     script: './application/bin/www',
-    cwd: '~/production/source'
+    cwd: '/home/ubuntu/production/source'
   }],
   deploy : {
     production : {
@@ -10,7 +10,7 @@ module.exports = {
       key  : '~/.ssh/test.pem',
       ref  : 'origin/main',
       repo : 'git@github.com:asouza88/pm2deploytest.git',
-      path : '~/production',
+      path : '/home/ubuntu/production',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
