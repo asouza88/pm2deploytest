@@ -1,6 +1,7 @@
 module.exports = {
   apps : [{
     script: './application/bin/www',
+    cwd: '/var/www/production/source'
   }],
   deploy : {
     production : {
