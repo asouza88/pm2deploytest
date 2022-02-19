@@ -9,7 +9,7 @@ module.exports = {
       key  : '~/.ssh/test.pem',
       ref  : 'origin/main',
       repo : 'git@github.com:asouza88/pm2deploytest.git',
-      path : '/home/ubuntu/',
+      path : '/var/www/production',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
